@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "runId": "python-csv-cleaning-2026-09-30",
+  "plan": {
+    "diagnosis": "omit",
+    "artifact": "execution-plan-v01.md",
+    "hash": "3211e671d7a9c84573dbb43bee8868234ccb1388030d1c971d618a91f3fcae42"
+  },
+  "stages": {
+    "brief": {
+      "artifact": "requirements-brief-v02.md",
+      "revision": "v02",
+      "hash": "3b5438d459dc2e983adc28549854f9196c0a1bc6f69a29d9909f5f8a75fff433",
+      "attempts": 1,
+      "inputs": [],
+      "gates": {
+        "brief-completeness": {
+          "result": "pass",
+          "finding": "Goal, Python starting point, 4 hours weekly for 4 weeks, Windows/free English constraints, and reproducible CSV script with output check are explicit."
+        },
+        "confirmation-fidelity": {
+          "result": "pass",
+          "finding": "v02 preserves v01 substantive fields and records the learner's exact 2026-09-30 confirmation of v01."
+        }
+      },
+      "started": false,
+      "invalidRevisions": []
+    },
+    "resources": {
+      "artifact": "learning-resources-v01.md",
+      "revision": "v01",
+      "hash": "941f22da82b46dcae62a648fed1be509d79c53581555f8a332bb6cac47700686",
+      "attempts": 1,
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "3b5438d459dc2e983adc28549854f9196c0a1bc6f69a29d9909f5f8a75fff433"
+        }
+      ],
+      "gates": {
+        "source-page-checks": {
+          "result": "pass",
+          "finding": "All 13 linked official pages were opened in web research; the Python venv and Microsoft setup pages also had recorded MCP HTTP 200 checks, with web content and MCP metadata roles distinguished."
+        },
+        "resource-fit": {
+          "result": "pass",
+          "finding": "Focused free English Windows and pandas references cover setup, CSV inspection, conditional cleaning, export, and output checks; optional operations are conditional on the real CSV and reading is scoped for 16 hours."
+        }
+      },
+      "started": false,
+      "invalidRevisions": []
+    },
+    "sequence": {
+      "artifact": "learning-sequence-v01.md",
+      "revision": "v01",
+      "hash": "b4fde00692632d7efba461a870782121f43ab8b05db4b479b721a7d99820e791",
+      "attempts": 1,
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "3b5438d459dc2e983adc28549854f9196c0a1bc6f69a29d9909f5f8a75fff433"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "941f22da82b46dcae62a648fed1be509d79c53581555f8a332bb6cac47700686"
+        }
+      ],
+      "gates": {
+        "goal-coverage": {
+          "result": "pass",
+          "finding": "Four milestones progress from inspection to a script for one real CSV, reread saved-output checks, and documented reruns; Windows and beginner pandas starting point are explicit."
+        },
+        "prerequisite-order": {
+          "result": "pass",
+          "finding": "Environment and DataFrame inspection precede real-file rule selection, which precedes implementation and saved-output verification."
+        },
+        "source-links": {
+          "result": "pass",
+          "finding": "Milestone links are the checked official pages in passing resources v01 and appear beside their planned uses."
+        },
+        "schedule-feasibility": {
+          "result": "pass",
+          "finding": "Four weekly rows each sum to 4 hours; setup 1, reading 3.5, practice 5, integration 6.5 sum to 16 hours."
+        }
+      },
+      "started": false,
+      "invalidRevisions": []
+    },
+    "practice": {
+      "artifact": "learning-practice-v01.md",
+      "revision": "v01",
+      "hash": "10cd270a5da005ffc4cde1fb0a1dc63614f6e634b7cdf4626941f4e00f04683c",
+      "attempts": 1,
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "3b5438d459dc2e983adc28549854f9196c0a1bc6f69a29d9909f5f8a75fff433"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "941f22da82b46dcae62a648fed1be509d79c53581555f8a332bb6cac47700686"
+        },
+        {
+          "stage": "sequence",
+          "artifact": "learning-sequence-v01.md",
+          "hash": "b4fde00692632d7efba461a870782121f43ab8b05db4b479b721a7d99820e791"
+        }
+      ],
+      "gates": {
+        "exercise-alignment": {
+          "result": "pass",
+          "finding": "One exercise matches each of the four sequence milestones, progressing from fictional inspection through real-file rules and a repeatable script to saved-output verification."
+        },
+        "observable-assessment": {
+          "result": "pass",
+          "finding": "Every exercise names artifact/console evidence, a specific pass criterion, a check, and a recovery step; week 4 includes a failing-control check and two saved-output reruns."
+        },
+        "schedule-feasibility": {
+          "result": "pass",
+          "finding": "Exercise times occupy week 1 2h, week 2 2.75h, week 3 3.25h, week 4 3.5h inside the corresponding four-hour sequence allocations, leaving stated setup/reading time."
+        }
+      },
+      "started": false,
+      "invalidRevisions": []
+    },
+    "draft": {
+      "artifact": "learning-draft-v01.md",
+      "revision": "v01",
+      "hash": "c9713b1755f39612f91c0a1dc229ccfc1bec71b03c4775d340b3c705ec5a6031",
+      "attempts": 1,
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "3b5438d459dc2e983adc28549854f9196c0a1bc6f69a29d9909f5f8a75fff433"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "941f22da82b46dcae62a648fed1be509d79c53581555f8a332bb6cac47700686"
+        },
+        {
+          "stage": "sequence",
+          "artifact": "learning-sequence-v01.md",
+          "hash": "b4fde00692632d7efba461a870782121f43ab8b05db4b479b721a7d99820e791"
+        },
+        {
+          "stage": "practice",
+          "artifact": "learning-practice-v01.md",
+          "hash": "10cd270a5da005ffc4cde1fb0a1dc63614f6e634b7cdf4626941f4e00f04683c"
+        }
+      ],
+      "gates": {
+        "required-artifact-structure": {
+          "result": "pass",
+          "finding": "Exact passing brief v02, resources v01, sequence v01, and practice v01 inputs and all required readable sections appear in draft v01; diagnosis is omitted."
+        },
+        "goal-coverage": {
+          "result": "pass",
+          "finding": "Draft covers basic Python/no pandas starting level, Windows and free English constraints, 4 weeks at 4 hours, and a reproducible cleaner for one real CSV with saved-output checks."
+        },
+        "credible-citations": {
+          "result": "pass",
+          "finding": "Weekly operations link beside claims to official pages checked in passing resources v01; the dated 2026-09-30 checks are distinguished from future reachability."
+        },
+        "prerequisite-order": {
+          "result": "pass",
+          "finding": "Week 1 environment and inspection precede week 2 observed rules, week 3 script, and week 4 fixture, reread-output checks, and rerun."
+        },
+        "schedule-feasibility": {
+          "result": "pass",
+          "finding": "All four weeks sum to 4 hours each and setup 1 plus reading 3.5 plus practice 5 plus integration 6.5 equals 16 hours; exercise times fit each week."
+        },
+        "exercise-alignment": {
+          "result": "pass",
+          "finding": "Every milestone integrates its matching task, expected evidence, pass criterion, recovery step, and time; final exercise checks a fixture, saved real CSV, deliberately failing assertion, and two reruns."
+        }
+      },
+      "started": false,
+      "invalidRevisions": []
+    }
+  },
+  "approval": {
+    "status": "approved",
+    "revision": "v01",
+    "hash": "c9713b1755f39612f91c0a1dc229ccfc1bec71b03c4775d340b3c705ec5a6031",
+    "fingerprint": "ccf0b26602a9ac143da926697b4d5256cbfbd287468493fe0e6309f332b3956d",
+    "evidence": "I approve validated draft v01."
+  },
+  "final": {
+    "hash": "771d0811fc9737740ea79fe5a3f77f5f286c65bba4387905fcf2657a85888917",
+    "fingerprint": "ccf0b26602a9ac143da926697b4d5256cbfbd287468493fe0e6309f332b3956d"
+  },
+  "events": [
+    {
+      "action": "start",
+      "stage": "brief",
+      "owner": "requirements-formalizer",
+      "inputs": []
+    },
+    {
+      "action": "inspect",
+      "stage": "brief",
+      "artifact": "requirements-brief-v02.md",
+      "revision": "v02",
+      "attempt": 1
+    },
+    {
+      "action": "gate",
+      "stage": "brief",
+      "gate": "brief-completeness",
+      "result": "pass",
+      "finding": "Goal, Python starting point, 4 hours weekly for 4 weeks, Windows/free English constraints, and reproducible CSV script with output check are explicit."
+    },
+    {
+      "action": "gate",
+      "stage": "brief",
+      "gate": "confirmation-fidelity",
+      "result": "pass",
+      "finding": "v02 preserves v01 substantive fields and records the learner's exact 2026-09-30 confirmation of v01."
+    },
+    {
+      "action": "plan",
+      "diagnosis": "omit",
+      "artifact": "execution-plan-v01.md",
+      "hash": "3211e671d7a9c84573dbb43bee8868234ccb1388030d1c971d618a91f3fcae42"
+    },
+    {
+      "action": "start",
+      "stage": "resources",
+      "owner": "resource-researcher",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "3b5438d459dc2e983adc28549854f9196c0a1bc6f69a29d9909f5f8a75fff433"
+        }
+      ]
+    },
+    {
+      "action": "inspect",
+      "stage": "resources",
+      "artifact": "learning-resources-v01.md",
+      "revision": "v01",
+      "attempt": 1
+    },
+    {
+      "action": "gate",
+      "stage": "resources",
+      "gate": "source-page-checks",
+      "result": "pass",
+      "finding": "All 13 linked official pages were opened in web research; the Python venv and Microsoft setup pages also had recorded MCP HTTP 200 checks, with web content and MCP metadata roles distinguished."
+    },
+    {
+      "action": "gate",
+      "stage": "resources",
+      "gate": "resource-fit",
+      "result": "pass",
+      "finding": "Focused free English Windows and pandas references cover setup, CSV inspection, conditional cleaning, export, and output checks; optional operations are conditional on the real CSV and reading is scoped for 16 hours."
+    },
+    {
+      "action": "start",
+      "stage": "sequence",
+      "owner": "learning-path-planner",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "3b5438d459dc2e983adc28549854f9196c0a1bc6f69a29d9909f5f8a75fff433"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "941f22da82b46dcae62a648fed1be509d79c53581555f8a332bb6cac47700686"
+        }
+      ]
+    },
+    {
+      "action": "inspect",
+      "stage": "sequence",
+      "artifact": "learning-sequence-v01.md",
+      "revision": "v01",
+      "attempt": 1
+    },
+    {
+      "action": "gate",
+      "stage": "sequence",
+      "gate": "goal-coverage",
+      "result": "pass",
+      "finding": "Four milestones progress from inspection to a script for one real CSV, reread saved-output checks, and documented reruns; Windows and beginner pandas starting point are explicit."
+    },
+    {
+      "action": "gate",
+      "stage": "sequence",
+      "gate": "prerequisite-order",
+      "result": "pass",
+      "finding": "Environment and DataFrame inspection precede real-file rule selection, which precedes implementation and saved-output verification."
+    },
+    {
+      "action": "gate",
+      "stage": "sequence",
+      "gate": "source-links",
+      "result": "pass",
+      "finding": "Milestone links are the checked official pages in passing resources v01 and appear beside their planned uses."
+    },
+    {
+      "action": "gate",
+      "stage": "sequence",
+      "gate": "schedule-feasibility",
+      "result": "pass",
+      "finding": "Four weekly rows each sum to 4 hours; setup 1, reading 3.5, practice 5, integration 6.5 sum to 16 hours."
+    },
+    {
+      "action": "start",
+      "stage": "practice",
+      "owner": "practice-assessor",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "3b5438d459dc2e983adc28549854f9196c0a1bc6f69a29d9909f5f8a75fff433"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "941f22da82b46dcae62a648fed1be509d79c53581555f8a332bb6cac47700686"
+        },
+        {
+          "stage": "sequence",
+          "artifact": "learning-sequence-v01.md",
+          "hash": "b4fde00692632d7efba461a870782121f43ab8b05db4b479b721a7d99820e791"
+        }
+      ]
+    },
+    {
+      "action": "inspect",
+      "stage": "practice",
+      "artifact": "learning-practice-v01.md",
+      "revision": "v01",
+      "attempt": 1
+    },
+    {
+      "action": "gate",
+      "stage": "practice",
+      "gate": "exercise-alignment",
+      "result": "pass",
+      "finding": "One exercise matches each of the four sequence milestones, progressing from fictional inspection through real-file rules and a repeatable script to saved-output verification."
+    },
+    {
+      "action": "gate",
+      "stage": "practice",
+      "gate": "observable-assessment",
+      "result": "pass",
+      "finding": "Every exercise names artifact/console evidence, a specific pass criterion, a check, and a recovery step; week 4 includes a failing-control check and two saved-output reruns."
+    },
+    {
+      "action": "gate",
+      "stage": "practice",
+      "gate": "schedule-feasibility",
+      "result": "pass",
+      "finding": "Exercise times occupy week 1 2h, week 2 2.75h, week 3 3.25h, week 4 3.5h inside the corresponding four-hour sequence allocations, leaving stated setup/reading time."
+    },
+    {
+      "action": "start",
+      "stage": "draft",
+      "owner": "learning-plan-synthesizer",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "3b5438d459dc2e983adc28549854f9196c0a1bc6f69a29d9909f5f8a75fff433"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "941f22da82b46dcae62a648fed1be509d79c53581555f8a332bb6cac47700686"
+        },
+        {
+          "stage": "sequence",
+          "artifact": "learning-sequence-v01.md",
+          "hash": "b4fde00692632d7efba461a870782121f43ab8b05db4b479b721a7d99820e791"
+        },
+        {
+          "stage": "practice",
+          "artifact": "learning-practice-v01.md",
+          "hash": "10cd270a5da005ffc4cde1fb0a1dc63614f6e634b7cdf4626941f4e00f04683c"
+        }
+      ]
+    },
+    {
+      "action": "inspect",
+      "stage": "draft",
+      "artifact": "learning-draft-v01.md",
+      "revision": "v01",
+      "attempt": 1
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "required-artifact-structure",
+      "result": "pass",
+      "finding": "Exact passing brief v02, resources v01, sequence v01, and practice v01 inputs and all required readable sections appear in draft v01; diagnosis is omitted."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "goal-coverage",
+      "result": "pass",
+      "finding": "Draft covers basic Python/no pandas starting level, Windows and free English constraints, 4 weeks at 4 hours, and a reproducible cleaner for one real CSV with saved-output checks."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "credible-citations",
+      "result": "pass",
+      "finding": "Weekly operations link beside claims to official pages checked in passing resources v01; the dated 2026-09-30 checks are distinguished from future reachability."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "prerequisite-order",
+      "result": "pass",
+      "finding": "Week 1 environment and inspection precede week 2 observed rules, week 3 script, and week 4 fixture, reread-output checks, and rerun."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "schedule-feasibility",
+      "result": "pass",
+      "finding": "All four weeks sum to 4 hours each and setup 1 plus reading 3.5 plus practice 5 plus integration 6.5 equals 16 hours; exercise times fit each week."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "exercise-alignment",
+      "result": "pass",
+      "finding": "Every milestone integrates its matching task, expected evidence, pass criterion, recovery step, and time; final exercise checks a fixture, saved real CSV, deliberately failing assertion, and two reruns."
+    },
+    {
+      "action": "approve",
+      "revision": "v01",
+      "evidence": "I approve validated draft v01."
+    },
+    {
+      "action": "write",
+      "artifact": "learning-plan-final.md"
+    },
+    {
+      "action": "write",
+      "artifact": "learning-plan-final.md"
+    }
+  ]
+}

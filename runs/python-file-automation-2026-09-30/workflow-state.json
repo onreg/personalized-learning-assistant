@@ -1,0 +1,476 @@
+{
+  "version": 1,
+  "runId": "python-file-automation-2026-09-30",
+  "plan": {
+    "diagnosis": "omit",
+    "artifact": "execution-plan-v01.md",
+    "hash": "117d2628c72731a5bb85cccb3ae04e0287df93ee19145027f9e751292eb41e40"
+  },
+  "stages": {
+    "brief": {
+      "artifact": "requirements-brief-v03.md",
+      "revision": "v03",
+      "hash": "34961494f392ed7688bab46666aae91563a99f7fe44cf8d528b5f4ee981deedc",
+      "attempts": 1,
+      "inputs": [],
+      "gates": {
+        "brief-completeness": {
+          "result": "pass",
+          "finding": "Goal, known Python starting point, 2 hours weekly for 5 weeks, Windows/free English/disposable-only constraints, CLI dry run, extension sorting, and automated tests are explicit; copy/move mechanics remain a bounded design choice."
+        },
+        "confirmation-fidelity": {
+          "result": "pass",
+          "finding": "v03 changes only confirmation metadata from v02 and records the learner's exact explicit v02 confirmation dated 2026-09-30."
+        }
+      },
+      "started": true,
+      "invalidRevisions": [],
+      "dispatchInputs": []
+    },
+    "resources": {
+      "artifact": "learning-resources-v01.md",
+      "revision": "v01",
+      "hash": "07a1147cd59170667cb06a887ed12e1c1a1f952899d95361e480145988381560",
+      "attempts": 1,
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v03.md",
+          "hash": "34961494f392ed7688bab46666aae91563a99f7fe44cf8d528b5f4ee981deedc"
+        }
+      ],
+      "gates": {
+        "source-page-checks": {
+          "result": "pass",
+          "finding": "Five official Python source URLs opened successfully in web access, and the artifact records separate learning_resources MCP HTTP 200 checks for the exact pages; prerelease candidate excluded."
+        },
+        "resource-fit": {
+          "result": "pass",
+          "finding": "Selective pathlib, shutil, argparse, unittest, and tempfile sections match Windows disposable-sample sorter, safe preview, CLI, and tests; estimated reading leaves project practice within 10 hours."
+        }
+      },
+      "started": false,
+      "invalidRevisions": []
+    },
+    "sequence": {
+      "artifact": "learning-sequence-v01.md",
+      "revision": "v01",
+      "hash": "ea02b234dbb4c6b00d464facf96dee38d10a4729cfe8e7b8778cd855f9764fcd",
+      "attempts": 1,
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v03.md",
+          "hash": "34961494f392ed7688bab46666aae91563a99f7fe44cf8d528b5f4ee981deedc"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "07a1147cd59170667cb06a887ed12e1c1a1f952899d95361e480145988381560"
+        }
+      ],
+      "gates": {
+        "goal-coverage": {
+          "result": "pass",
+          "finding": "Five milestones culminate in CLI extension sorter over disposable sample copies, default no-write preview, explicit apply confirmation, collision skip, discoverable tests, and end-to-end demonstration."
+        },
+        "prerequisite-order": {
+          "result": "pass",
+          "finding": "Path inspection and classification precede pure move planning, then CLI execution, tests, and integration; each milestone names its prior dependency."
+        },
+        "source-links": {
+          "result": "pass",
+          "finding": "All referenced API and tutorial claims link to the five opened, checked official Python pages from passing resources v01."
+        },
+        "schedule-feasibility": {
+          "result": "pass",
+          "finding": "Five 120-minute weeks total 600 minutes; reading 180, hands-on 345, checks 75, with scoped top-level-only functionality."
+        }
+      },
+      "started": false,
+      "invalidRevisions": []
+    },
+    "practice": {
+      "artifact": "learning-practice-v01.md",
+      "revision": "v01",
+      "hash": "b3b58f73097412e0bed723f9344af1dc7af4174d32c19eb9ccc8c6e926c576ad",
+      "attempts": 1,
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v03.md",
+          "hash": "34961494f392ed7688bab46666aae91563a99f7fe44cf8d528b5f4ee981deedc"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "07a1147cd59170667cb06a887ed12e1c1a1f952899d95361e480145988381560"
+        },
+        {
+          "stage": "sequence",
+          "artifact": "learning-sequence-v01.md",
+          "hash": "ea02b234dbb4c6b00d464facf96dee38d10a4729cfe8e7b8778cd855f9764fcd"
+        }
+      ],
+      "gates": {
+        "exercise-alignment": {
+          "result": "pass",
+          "finding": "One exercise matches each of five sequence milestones, building from toy-file routing through pure preview, confirmed CLI moves, automated tests, and final disposable demonstration."
+        },
+        "observable-assessment": {
+          "result": "pass",
+          "finding": "Each exercise names artifact evidence, direct checks, a specific pass criterion and recovery; full path/directory/bytes snapshots test no-write preview and decline, while apply and collision behavior have distinct checks."
+        },
+        "schedule-feasibility": {
+          "result": "pass",
+          "finding": "Practice and check times 75, 90, 75, 75, 105 minutes plus weekly reading 45, 30, 45, 45, 15 minutes equal five 120-minute weeks."
+        }
+      },
+      "started": false,
+      "invalidRevisions": []
+    },
+    "draft": {
+      "artifact": "learning-draft-v01.md",
+      "revision": "v01",
+      "hash": "b56412a9490a2cf1cd9e240aaa1e778453c6bad64f1fc1d2c5be6263798c5d19",
+      "attempts": 1,
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v03.md",
+          "hash": "34961494f392ed7688bab46666aae91563a99f7fe44cf8d528b5f4ee981deedc"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "07a1147cd59170667cb06a887ed12e1c1a1f952899d95361e480145988381560"
+        },
+        {
+          "stage": "sequence",
+          "artifact": "learning-sequence-v01.md",
+          "hash": "ea02b234dbb4c6b00d464facf96dee38d10a4729cfe8e7b8778cd855f9764fcd"
+        },
+        {
+          "stage": "practice",
+          "artifact": "learning-practice-v01.md",
+          "hash": "b3b58f73097412e0bed723f9344af1dc7af4174d32c19eb9ccc8c6e926c576ad"
+        }
+      ],
+      "gates": {
+        "required-artifact-structure": {
+          "result": "pass",
+          "finding": "Independent validator found Revision, exact passing input paths and hashes, Purpose, Evidence, Goal, Schedule, five readable Milestones, and Limitations; omitted diagnosis is stated."
+        },
+        "goal-coverage": {
+          "result": "pass",
+          "finding": "Independent validator found Windows CLI extension sorter on disposable prepared copies, default preview, explicit apply plus y, collision skip, automated tests, README, correct starting point and constraints."
+        },
+        "credible-citations": {
+          "result": "pass",
+          "finding": "Independent validator found API and tutorial claims linked beside five official Python pages checked in resources v01; local artifact links resolve and date of checks is stated."
+        },
+        "prerequisite-order": {
+          "result": "pass",
+          "finding": "Independent validator found weeks progress from path classification to no-write planning, CLI execution, unittest/tempfile tests, and integration with prerequisites named."
+        },
+        "schedule-feasibility": {
+          "result": "pass",
+          "finding": "Independent validator verified each week totals 120 minutes and 180 reading plus 345 practice plus 75 checks equals 600 minutes across five weeks."
+        },
+        "exercise-alignment": {
+          "result": "pass",
+          "finding": "Independent validator found each week has task, observable evidence, pass criterion, recovery step, and time matching practice v01, including preview snapshots, collision preservation, confirmation, tests, and final demonstration."
+        }
+      },
+      "started": false,
+      "invalidRevisions": []
+    }
+  },
+  "approval": {
+    "status": "rejected",
+    "revision": "v01",
+    "feedback": "I do not approve validated draft v01. I want the prepared source copies to remain after applying the sort, so the script should copy into extension subfolders instead of moving files. Keep the default dry run, explicit apply confirmation, collision skip, disposable sample files, automated tests, and the ten-hour schedule. Please revise the plan and any affected upstream artifacts, then show me the changed requirements for confirmation if needed before rebuilding and validating the draft."
+  },
+  "final": null,
+  "events": [
+    {
+      "action": "start",
+      "stage": "brief",
+      "owner": "requirements-formalizer",
+      "inputs": []
+    },
+    {
+      "action": "start",
+      "stage": "brief",
+      "owner": "requirements-formalizer",
+      "inputs": []
+    },
+    {
+      "action": "start",
+      "stage": "brief",
+      "owner": "requirements-formalizer",
+      "inputs": []
+    },
+    {
+      "action": "inspect",
+      "stage": "brief",
+      "artifact": "requirements-brief-v03.md",
+      "revision": "v03",
+      "attempt": 1
+    },
+    {
+      "action": "gate",
+      "stage": "brief",
+      "gate": "brief-completeness",
+      "result": "pass",
+      "finding": "Goal, known Python starting point, 2 hours weekly for 5 weeks, Windows/free English/disposable-only constraints, CLI dry run, extension sorting, and automated tests are explicit; copy/move mechanics remain a bounded design choice."
+    },
+    {
+      "action": "gate",
+      "stage": "brief",
+      "gate": "confirmation-fidelity",
+      "result": "pass",
+      "finding": "v03 changes only confirmation metadata from v02 and records the learner's exact explicit v02 confirmation dated 2026-09-30."
+    },
+    {
+      "action": "plan",
+      "diagnosis": "omit",
+      "artifact": "execution-plan-v01.md",
+      "hash": "117d2628c72731a5bb85cccb3ae04e0287df93ee19145027f9e751292eb41e40"
+    },
+    {
+      "action": "start",
+      "stage": "resources",
+      "owner": "resource-researcher",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v03.md",
+          "hash": "34961494f392ed7688bab46666aae91563a99f7fe44cf8d528b5f4ee981deedc"
+        }
+      ]
+    },
+    {
+      "action": "start",
+      "stage": "resources",
+      "owner": "resource-researcher",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v03.md",
+          "hash": "34961494f392ed7688bab46666aae91563a99f7fe44cf8d528b5f4ee981deedc"
+        }
+      ]
+    },
+    {
+      "action": "inspect",
+      "stage": "resources",
+      "artifact": "learning-resources-v01.md",
+      "revision": "v01",
+      "attempt": 1
+    },
+    {
+      "action": "gate",
+      "stage": "resources",
+      "gate": "source-page-checks",
+      "result": "pass",
+      "finding": "Five official Python source URLs opened successfully in web access, and the artifact records separate learning_resources MCP HTTP 200 checks for the exact pages; prerelease candidate excluded."
+    },
+    {
+      "action": "gate",
+      "stage": "resources",
+      "gate": "resource-fit",
+      "result": "pass",
+      "finding": "Selective pathlib, shutil, argparse, unittest, and tempfile sections match Windows disposable-sample sorter, safe preview, CLI, and tests; estimated reading leaves project practice within 10 hours."
+    },
+    {
+      "action": "start",
+      "stage": "sequence",
+      "owner": "learning-path-planner",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v03.md",
+          "hash": "34961494f392ed7688bab46666aae91563a99f7fe44cf8d528b5f4ee981deedc"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "07a1147cd59170667cb06a887ed12e1c1a1f952899d95361e480145988381560"
+        }
+      ]
+    },
+    {
+      "action": "inspect",
+      "stage": "sequence",
+      "artifact": "learning-sequence-v01.md",
+      "revision": "v01",
+      "attempt": 1
+    },
+    {
+      "action": "gate",
+      "stage": "sequence",
+      "gate": "goal-coverage",
+      "result": "pass",
+      "finding": "Five milestones culminate in CLI extension sorter over disposable sample copies, default no-write preview, explicit apply confirmation, collision skip, discoverable tests, and end-to-end demonstration."
+    },
+    {
+      "action": "gate",
+      "stage": "sequence",
+      "gate": "prerequisite-order",
+      "result": "pass",
+      "finding": "Path inspection and classification precede pure move planning, then CLI execution, tests, and integration; each milestone names its prior dependency."
+    },
+    {
+      "action": "gate",
+      "stage": "sequence",
+      "gate": "source-links",
+      "result": "pass",
+      "finding": "All referenced API and tutorial claims link to the five opened, checked official Python pages from passing resources v01."
+    },
+    {
+      "action": "gate",
+      "stage": "sequence",
+      "gate": "schedule-feasibility",
+      "result": "pass",
+      "finding": "Five 120-minute weeks total 600 minutes; reading 180, hands-on 345, checks 75, with scoped top-level-only functionality."
+    },
+    {
+      "action": "start",
+      "stage": "practice",
+      "owner": "practice-assessor",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v03.md",
+          "hash": "34961494f392ed7688bab46666aae91563a99f7fe44cf8d528b5f4ee981deedc"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "07a1147cd59170667cb06a887ed12e1c1a1f952899d95361e480145988381560"
+        },
+        {
+          "stage": "sequence",
+          "artifact": "learning-sequence-v01.md",
+          "hash": "ea02b234dbb4c6b00d464facf96dee38d10a4729cfe8e7b8778cd855f9764fcd"
+        }
+      ]
+    },
+    {
+      "action": "inspect",
+      "stage": "practice",
+      "artifact": "learning-practice-v01.md",
+      "revision": "v01",
+      "attempt": 1
+    },
+    {
+      "action": "gate",
+      "stage": "practice",
+      "gate": "exercise-alignment",
+      "result": "pass",
+      "finding": "One exercise matches each of five sequence milestones, building from toy-file routing through pure preview, confirmed CLI moves, automated tests, and final disposable demonstration."
+    },
+    {
+      "action": "gate",
+      "stage": "practice",
+      "gate": "observable-assessment",
+      "result": "pass",
+      "finding": "Each exercise names artifact evidence, direct checks, a specific pass criterion and recovery; full path/directory/bytes snapshots test no-write preview and decline, while apply and collision behavior have distinct checks."
+    },
+    {
+      "action": "gate",
+      "stage": "practice",
+      "gate": "schedule-feasibility",
+      "result": "pass",
+      "finding": "Practice and check times 75, 90, 75, 75, 105 minutes plus weekly reading 45, 30, 45, 45, 15 minutes equal five 120-minute weeks."
+    },
+    {
+      "action": "start",
+      "stage": "draft",
+      "owner": "learning-plan-synthesizer",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v03.md",
+          "hash": "34961494f392ed7688bab46666aae91563a99f7fe44cf8d528b5f4ee981deedc"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "07a1147cd59170667cb06a887ed12e1c1a1f952899d95361e480145988381560"
+        },
+        {
+          "stage": "sequence",
+          "artifact": "learning-sequence-v01.md",
+          "hash": "ea02b234dbb4c6b00d464facf96dee38d10a4729cfe8e7b8778cd855f9764fcd"
+        },
+        {
+          "stage": "practice",
+          "artifact": "learning-practice-v01.md",
+          "hash": "b3b58f73097412e0bed723f9344af1dc7af4174d32c19eb9ccc8c6e926c576ad"
+        }
+      ]
+    },
+    {
+      "action": "inspect",
+      "stage": "draft",
+      "artifact": "learning-draft-v01.md",
+      "revision": "v01",
+      "attempt": 1
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "required-artifact-structure",
+      "result": "pass",
+      "finding": "Independent validator found Revision, exact passing input paths and hashes, Purpose, Evidence, Goal, Schedule, five readable Milestones, and Limitations; omitted diagnosis is stated."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "goal-coverage",
+      "result": "pass",
+      "finding": "Independent validator found Windows CLI extension sorter on disposable prepared copies, default preview, explicit apply plus y, collision skip, automated tests, README, correct starting point and constraints."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "credible-citations",
+      "result": "pass",
+      "finding": "Independent validator found API and tutorial claims linked beside five official Python pages checked in resources v01; local artifact links resolve and date of checks is stated."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "prerequisite-order",
+      "result": "pass",
+      "finding": "Independent validator found weeks progress from path classification to no-write planning, CLI execution, unittest/tempfile tests, and integration with prerequisites named."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "schedule-feasibility",
+      "result": "pass",
+      "finding": "Independent validator verified each week totals 120 minutes and 180 reading plus 345 practice plus 75 checks equals 600 minutes across five weeks."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "exercise-alignment",
+      "result": "pass",
+      "finding": "Independent validator found each week has task, observable evidence, pass criterion, recovery step, and time matching practice v01, including preview snapshots, collision preservation, confirmation, tests, and final demonstration."
+    },
+    {
+      "action": "reject",
+      "revision": "v01",
+      "feedback": "I do not approve validated draft v01. I want the prepared source copies to remain after applying the sort, so the script should copy into extension subfolders instead of moving files. Keep the default dry run, explicit apply confirmation, collision skip, disposable sample files, automated tests, and the ten-hour schedule. Please revise the plan and any affected upstream artifacts, then show me the changed requirements for confirmation if needed before rebuilding and validating the draft."
+    },
+    {
+      "action": "start",
+      "stage": "brief",
+      "owner": "requirements-formalizer",
+      "inputs": []
+    }
+  ]
+}

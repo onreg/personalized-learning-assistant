@@ -1,0 +1,15 @@
+# Local credentials and machine-specific Claude settings
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+.claude/settings.local.json
+
+# Generated caches and temporary files
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

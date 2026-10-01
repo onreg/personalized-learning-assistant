@@ -1,0 +1,815 @@
+{
+  "version": 1,
+  "runId": "csharp-unit-testing-2026-09-30",
+  "plan": {
+    "diagnosis": "run",
+    "artifact": "execution-plan-v01.md",
+    "hash": "5dc7340e064a30ff0d5b7ff43d3634e8266855c534fb0c9c2008fcefe2f26107"
+  },
+  "stages": {
+    "brief": {
+      "artifact": "requirements-brief-v02.md",
+      "revision": "v02",
+      "hash": "2aa26907dddefa9afbbdef33188e7f83832c005b51933f10c5600785ff1f9add",
+      "attempts": 1,
+      "inputs": [],
+      "gates": {
+        "brief-completeness": {
+          "result": "pass",
+          "finding": "Confirmed v02 states the C# unit-testing goal, uncertain starting level and short assessment, 3 hours weekly for 6 weeks, Windows and free English constraints, and locally runnable tested service outcome."
+        },
+        "confirmation-fidelity": {
+          "result": "pass",
+          "finding": "Confirmed v02 preserves v01 substantive fields and records the learner's exact 2026-09-30 confirmation of v01."
+        }
+      },
+      "started": false,
+      "invalidRevisions": []
+    },
+    "diagnosis": {
+      "artifact": "starting-level-diagnosis-v02.md",
+      "revision": "v02",
+      "hash": "4663daeaac097325f770b74a920a37def101c73fdd45116ea9cb17c6687ead8e",
+      "attempts": 1,
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "2aa26907dddefa9afbbdef33188e7f83832c005b51933f10c5600785ff1f9add"
+        }
+      ],
+      "gates": {
+        "answer-provenance": {
+          "result": "pass",
+          "finding": "Diagnosis v02 quotes the learner's exact 2026-09-30 answer message and maps its numbered answers to all three original prompts."
+        },
+        "placement": {
+          "result": "pass",
+          "finding": "Task 1 and 3 pass; Task 2 correctly tests ordinary member cases but omits the exact 100m boundary and negative rejection, so the first milestone is behavior-focused test-case design and precise assertions; setup fluency remains unmeasured."
+        }
+      },
+      "started": false,
+      "invalidRevisions": []
+    },
+    "resources": {
+      "artifact": "learning-resources-v01.md",
+      "revision": "v01",
+      "hash": "13b5b65419d069e1377458f9264608e140cca6969efa91278cbfb4bd4d3fe4e1",
+      "attempts": 1,
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "2aa26907dddefa9afbbdef33188e7f83832c005b51933f10c5600785ff1f9add"
+        }
+      ],
+      "gates": {
+        "source-page-checks": {
+          "result": "pass",
+          "finding": "Seven recommended Microsoft Learn article bodies were opened after web search and each URL was separately checked by learning_resources.inspect_learning_page with HTTP 200; failed or unsuitable pages are excluded."
+        },
+        "resource-fit": {
+          "result": "pass",
+          "finding": "Verified free English references cover Windows SDK setup, xUnit local test loop, behavior-focused test design, a testable service boundary, and dotnet test; refresher and coverage pages are conditional within the 18-hour limit."
+        }
+      },
+      "started": false,
+      "invalidRevisions": []
+    },
+    "sequence": {
+      "artifact": "learning-sequence-v03.md",
+      "revision": "v03",
+      "hash": "fc5d3fc91a260d7c0bffa51fb8d8568f2f78aaace0273c2868520253849c121a",
+      "attempts": 2,
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "2aa26907dddefa9afbbdef33188e7f83832c005b51933f10c5600785ff1f9add"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "13b5b65419d069e1377458f9264608e140cca6969efa91278cbfb4bd4d3fe4e1"
+        },
+        {
+          "stage": "diagnosis",
+          "artifact": "starting-level-diagnosis-v02.md",
+          "hash": "4663daeaac097325f770b74a920a37def101c73fdd45116ea9cb17c6687ead8e"
+        }
+      ],
+      "gates": {
+        "goal-coverage": {
+          "result": "pass",
+          "finding": "Six milestones lead from diagnosed boundary-case gap through a tested checkout quote service and documented local Windows run."
+        },
+        "prerequisite-order": {
+          "result": "pass",
+          "finding": "Case table and first xUnit test precede pricing rules, quote extension, deliberate fault checks, sample runner, and final handoff."
+        },
+        "source-links": {
+          "result": "pass",
+          "finding": "Every linked teaching source appears in passing resources v01; decimal cases use xUnit Fact tests supported by the checked tutorial."
+        },
+        "schedule-feasibility": {
+          "result": "pass",
+          "finding": "All six milestones allocate exactly 3 hours, including setup, exercises, local runs, and integration, totaling 18 hours."
+        }
+      },
+      "started": false,
+      "invalidRevisions": []
+    },
+    "practice": {
+      "artifact": "learning-practice-v03.md",
+      "revision": "v03",
+      "hash": "fa435cfb4f5e9ce9a80821a43583c3b95742bc35b0706933284fbff2c041afa9",
+      "attempts": 2,
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "2aa26907dddefa9afbbdef33188e7f83832c005b51933f10c5600785ff1f9add"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "13b5b65419d069e1377458f9264608e140cca6969efa91278cbfb4bd4d3fe4e1"
+        },
+        {
+          "stage": "sequence",
+          "artifact": "learning-sequence-v03.md",
+          "hash": "fc5d3fc91a260d7c0bffa51fb8d8568f2f78aaace0273c2868520253849c121a"
+        },
+        {
+          "stage": "diagnosis",
+          "artifact": "starting-level-diagnosis-v02.md",
+          "hash": "4663daeaac097325f770b74a920a37def101c73fdd45116ea9cb17c6687ead8e"
+        }
+      ],
+      "gates": {
+        "exercise-alignment": {
+          "result": "pass",
+          "finding": "Practice v03 preserves the six sequence v03 milestones and diagnosed boundary-case start, Windows and free English constraints, and the 3-hour weekly allocations; Week 3 recovery now addresses the observable 50m delivery boundary and public negative rejection."
+        },
+        "observable-assessment": {
+          "result": "pass",
+          "finding": "Each milestone specifies task, evidence, progress check, pass criterion, recovery and time. Detector tables state concrete input, correct/faulty outputs and distinguishing assertions; behavior-equivalent delivery-after-discount and partial removal of redundant validation are explicitly excluded from detection claims. Learner runs are prospective."
+        },
+        "schedule-feasibility": {
+          "result": "pass",
+          "finding": "Six weekly allocations sum to exactly 3 hours each and 18 hours overall. Detector explanations use existing cases and review time; no extra mutation trial or milestone is required."
+        }
+      },
+      "started": false,
+      "invalidRevisions": []
+    },
+    "draft": {
+      "artifact": "learning-draft-v02.md",
+      "revision": "v02",
+      "hash": "6fc616d083974e15674b39a5236e6ba3e104f4cd90c3985af5d7a671f72e6cc8",
+      "attempts": 2,
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "2aa26907dddefa9afbbdef33188e7f83832c005b51933f10c5600785ff1f9add"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "13b5b65419d069e1377458f9264608e140cca6969efa91278cbfb4bd4d3fe4e1"
+        },
+        {
+          "stage": "sequence",
+          "artifact": "learning-sequence-v03.md",
+          "hash": "fc5d3fc91a260d7c0bffa51fb8d8568f2f78aaace0273c2868520253849c121a"
+        },
+        {
+          "stage": "practice",
+          "artifact": "learning-practice-v03.md",
+          "hash": "fa435cfb4f5e9ce9a80821a43583c3b95742bc35b0706933284fbff2c041afa9"
+        },
+        {
+          "stage": "diagnosis",
+          "artifact": "starting-level-diagnosis-v02.md",
+          "hash": "4663daeaac097325f770b74a920a37def101c73fdd45116ea9cb17c6687ead8e"
+        }
+      ],
+      "gates": {
+        "required-artifact-structure": {
+          "result": "pass",
+          "finding": "Independent validator PASS: inspected draft v02 has required sections, exact five current input paths, evidence and limitations; every milestone integrates corresponding practice v03."
+        },
+        "goal-coverage": {
+          "result": "pass",
+          "finding": "Independent validator PASS: meaningful C# tests for a local .NET service, Windows and free English resources, 3 hours weekly for 6 weeks; diagnosed boundary and rejected-input gaps determine the start while SDK and setup fluency remain unmeasured."
+        },
+        "credible-citations": {
+          "result": "pass",
+          "finding": "Independent validator PASS: setup, xUnit, design, CLI and coverage claims link to checked Microsoft sources in resources v01, dated 2026-09-30. Additional review opened four Microsoft pages; tutorial web endpoint returned 503, but official Microsoft source at https://github.com/dotnet/docs/blob/main/docs/core/testing/unit-testing-csharp-with-xunit.md verified projects, Fact and test loop. Prior access checks are distinguished from current reachability."
+        },
+        "prerequisite-order": {
+          "result": "pass",
+          "finding": "Independent validator PASS: behavior table and first working test precede pricing coverage, quote extension, deliberate fault trials, console integration and reproducible handoff; Week 1 establishes SDK and project execution."
+        },
+        "schedule-feasibility": {
+          "result": "pass",
+          "finding": "Independent validator PASS: six weekly component sums are exactly 3 hours each, totaling 18 hours. Detector explanations use existing allocations; only Week 4 requires two mutation trials."
+        },
+        "exercise-alignment": {
+          "result": "pass",
+          "finding": "Independent validator PASS: all six milestones preserve practice v03 task, evidence, checks, criterion, recovery and time. At 50m correct delivery/total 0m/50m differs from faulty 5m/55m; complete absence of public rejection differs from a throw at -1m. Literal assertions, equivalent delivery-after-discount reasoning and shared-validator caveat are correct; no learner completion claimed."
+        }
+      },
+      "started": false,
+      "invalidRevisions": []
+    }
+  },
+  "approval": {
+    "status": "approved",
+    "revision": "v02",
+    "hash": "6fc616d083974e15674b39a5236e6ba3e104f4cd90c3985af5d7a671f72e6cc8",
+    "fingerprint": "fac891cf5d8738e98646b9101d5b8dc641c7f817b57ddfb3a9fc34e5d44005e2",
+    "evidence": "I approve validated draft v02."
+  },
+  "final": {
+    "hash": "06f6c75a335da75cf66308644f1245c2b0b3d8aab2c1ae8835b38abce7a4d568",
+    "fingerprint": "fac891cf5d8738e98646b9101d5b8dc641c7f817b57ddfb3a9fc34e5d44005e2"
+  },
+  "events": [
+    {
+      "action": "start",
+      "stage": "brief",
+      "owner": "requirements-formalizer",
+      "inputs": []
+    },
+    {
+      "action": "start",
+      "stage": "brief",
+      "owner": "requirements-formalizer",
+      "inputs": []
+    },
+    {
+      "action": "inspect",
+      "stage": "brief",
+      "artifact": "requirements-brief-v02.md",
+      "revision": "v02",
+      "attempt": 1
+    },
+    {
+      "action": "gate",
+      "stage": "brief",
+      "gate": "brief-completeness",
+      "result": "pass",
+      "finding": "Confirmed v02 states the C# unit-testing goal, uncertain starting level and short assessment, 3 hours weekly for 6 weeks, Windows and free English constraints, and locally runnable tested service outcome."
+    },
+    {
+      "action": "gate",
+      "stage": "brief",
+      "gate": "confirmation-fidelity",
+      "result": "pass",
+      "finding": "Confirmed v02 preserves v01 substantive fields and records the learner's exact 2026-09-30 confirmation of v01."
+    },
+    {
+      "action": "plan",
+      "diagnosis": "run",
+      "artifact": "execution-plan-v01.md",
+      "hash": "5dc7340e064a30ff0d5b7ff43d3634e8266855c534fb0c9c2008fcefe2f26107"
+    },
+    {
+      "action": "start",
+      "stage": "diagnosis",
+      "owner": "starting-level-diagnostician",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "2aa26907dddefa9afbbdef33188e7f83832c005b51933f10c5600785ff1f9add"
+        }
+      ]
+    },
+    {
+      "action": "start",
+      "stage": "resources",
+      "owner": "resource-researcher",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "2aa26907dddefa9afbbdef33188e7f83832c005b51933f10c5600785ff1f9add"
+        }
+      ]
+    },
+    {
+      "action": "inspect",
+      "stage": "resources",
+      "artifact": "learning-resources-v01.md",
+      "revision": "v01",
+      "attempt": 1
+    },
+    {
+      "action": "gate",
+      "stage": "resources",
+      "gate": "source-page-checks",
+      "result": "pass",
+      "finding": "Seven recommended Microsoft Learn article bodies were opened after web search and each URL was separately checked by learning_resources.inspect_learning_page with HTTP 200; failed or unsuitable pages are excluded."
+    },
+    {
+      "action": "gate",
+      "stage": "resources",
+      "gate": "resource-fit",
+      "result": "pass",
+      "finding": "Verified free English references cover Windows SDK setup, xUnit local test loop, behavior-focused test design, a testable service boundary, and dotnet test; refresher and coverage pages are conditional within the 18-hour limit."
+    },
+    {
+      "action": "start",
+      "stage": "diagnosis",
+      "owner": "starting-level-diagnostician",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "2aa26907dddefa9afbbdef33188e7f83832c005b51933f10c5600785ff1f9add"
+        }
+      ]
+    },
+    {
+      "action": "inspect",
+      "stage": "diagnosis",
+      "artifact": "starting-level-diagnosis-v02.md",
+      "revision": "v02",
+      "attempt": 1
+    },
+    {
+      "action": "gate",
+      "stage": "diagnosis",
+      "gate": "answer-provenance",
+      "result": "pass",
+      "finding": "Diagnosis v02 quotes the learner's exact 2026-09-30 answer message and maps its numbered answers to all three original prompts."
+    },
+    {
+      "action": "gate",
+      "stage": "diagnosis",
+      "gate": "placement",
+      "result": "pass",
+      "finding": "Task 1 and 3 pass; Task 2 correctly tests ordinary member cases but omits the exact 100m boundary and negative rejection, so the first milestone is behavior-focused test-case design and precise assertions; setup fluency remains unmeasured."
+    },
+    {
+      "action": "start",
+      "stage": "sequence",
+      "owner": "learning-path-planner",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "2aa26907dddefa9afbbdef33188e7f83832c005b51933f10c5600785ff1f9add"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "13b5b65419d069e1377458f9264608e140cca6969efa91278cbfb4bd4d3fe4e1"
+        },
+        {
+          "stage": "diagnosis",
+          "artifact": "starting-level-diagnosis-v02.md",
+          "hash": "4663daeaac097325f770b74a920a37def101c73fdd45116ea9cb17c6687ead8e"
+        }
+      ]
+    },
+    {
+      "action": "inspect",
+      "stage": "sequence",
+      "artifact": "learning-sequence-v01.md",
+      "revision": "v01",
+      "attempt": 1
+    },
+    {
+      "action": "gate",
+      "stage": "sequence",
+      "gate": "goal-coverage",
+      "result": "pass",
+      "finding": "Six weekly milestones build from diagnosed boundary-case gap to a locally runnable checkout quote service with automated xUnit tests on Windows."
+    },
+    {
+      "action": "gate",
+      "stage": "sequence",
+      "gate": "prerequisite-order",
+      "result": "pass",
+      "finding": "Case design and first test precede full pricing rule, quote extension, fault checks, sample runner, and final reproducibility review."
+    },
+    {
+      "action": "gate",
+      "stage": "sequence",
+      "gate": "source-links",
+      "result": "fail",
+      "finding": "Week 2 recommends InlineData for decimal price cases without a viable representation; Microsoft C# attribute guidance excludes decimal arguments, so use simple Fact cases or a documented data source."
+    },
+    {
+      "action": "gate",
+      "stage": "sequence",
+      "gate": "schedule-feasibility",
+      "result": "pass",
+      "finding": "Each of six weekly allocations totals 3 hours, including setup, writing and running tests, integration, and review, for 18 hours overall."
+    },
+    {
+      "action": "start",
+      "stage": "sequence",
+      "owner": "learning-path-planner",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "2aa26907dddefa9afbbdef33188e7f83832c005b51933f10c5600785ff1f9add"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "13b5b65419d069e1377458f9264608e140cca6969efa91278cbfb4bd4d3fe4e1"
+        },
+        {
+          "stage": "diagnosis",
+          "artifact": "starting-level-diagnosis-v02.md",
+          "hash": "4663daeaac097325f770b74a920a37def101c73fdd45116ea9cb17c6687ead8e"
+        }
+      ]
+    },
+    {
+      "action": "start",
+      "stage": "sequence",
+      "owner": "learning-path-planner",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "2aa26907dddefa9afbbdef33188e7f83832c005b51933f10c5600785ff1f9add"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "13b5b65419d069e1377458f9264608e140cca6969efa91278cbfb4bd4d3fe4e1"
+        },
+        {
+          "stage": "diagnosis",
+          "artifact": "starting-level-diagnosis-v02.md",
+          "hash": "4663daeaac097325f770b74a920a37def101c73fdd45116ea9cb17c6687ead8e"
+        }
+      ]
+    },
+    {
+      "action": "inspect",
+      "stage": "sequence",
+      "artifact": "learning-sequence-v03.md",
+      "revision": "v03",
+      "attempt": 2
+    },
+    {
+      "action": "gate",
+      "stage": "sequence",
+      "gate": "goal-coverage",
+      "result": "pass",
+      "finding": "Six milestones lead from diagnosed boundary-case gap through a tested checkout quote service and documented local Windows run."
+    },
+    {
+      "action": "gate",
+      "stage": "sequence",
+      "gate": "prerequisite-order",
+      "result": "pass",
+      "finding": "Case table and first xUnit test precede pricing rules, quote extension, deliberate fault checks, sample runner, and final handoff."
+    },
+    {
+      "action": "gate",
+      "stage": "sequence",
+      "gate": "source-links",
+      "result": "pass",
+      "finding": "Every linked teaching source appears in passing resources v01; decimal cases use xUnit Fact tests supported by the checked tutorial."
+    },
+    {
+      "action": "gate",
+      "stage": "sequence",
+      "gate": "schedule-feasibility",
+      "result": "pass",
+      "finding": "All six milestones allocate exactly 3 hours, including setup, exercises, local runs, and integration, totaling 18 hours."
+    },
+    {
+      "action": "start",
+      "stage": "practice",
+      "owner": "practice-assessor",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "2aa26907dddefa9afbbdef33188e7f83832c005b51933f10c5600785ff1f9add"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "13b5b65419d069e1377458f9264608e140cca6969efa91278cbfb4bd4d3fe4e1"
+        },
+        {
+          "stage": "sequence",
+          "artifact": "learning-sequence-v03.md",
+          "hash": "fc5d3fc91a260d7c0bffa51fb8d8568f2f78aaace0273c2868520253849c121a"
+        },
+        {
+          "stage": "diagnosis",
+          "artifact": "starting-level-diagnosis-v02.md",
+          "hash": "4663daeaac097325f770b74a920a37def101c73fdd45116ea9cb17c6687ead8e"
+        }
+      ]
+    },
+    {
+      "action": "inspect",
+      "stage": "practice",
+      "artifact": "learning-practice-v01.md",
+      "revision": "v01",
+      "attempt": 1
+    },
+    {
+      "action": "gate",
+      "stage": "practice",
+      "gate": "exercise-alignment",
+      "result": "pass",
+      "finding": "Six matching weekly exercises follow sequence v03 from diagnosed case-selection gap through pricing tests, quote extension, fault checks, local runner, and final handoff."
+    },
+    {
+      "action": "gate",
+      "stage": "practice",
+      "gate": "observable-assessment",
+      "result": "pass",
+      "finding": "Every week states a concrete task, expected table/code/output, run-based progress check, specific pass criterion, and targeted recovery step without claiming completion."
+    },
+    {
+      "action": "gate",
+      "stage": "practice",
+      "gate": "schedule-feasibility",
+      "result": "pass",
+      "finding": "Practice time matches each sequence milestone's 3-hour breakdown, six weeks totaling 18 hours including setup, implementation, tests, and local runs."
+    },
+    {
+      "action": "start",
+      "stage": "draft",
+      "owner": "learning-plan-synthesizer",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "2aa26907dddefa9afbbdef33188e7f83832c005b51933f10c5600785ff1f9add"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "13b5b65419d069e1377458f9264608e140cca6969efa91278cbfb4bd4d3fe4e1"
+        },
+        {
+          "stage": "sequence",
+          "artifact": "learning-sequence-v03.md",
+          "hash": "fc5d3fc91a260d7c0bffa51fb8d8568f2f78aaace0273c2868520253849c121a"
+        },
+        {
+          "stage": "practice",
+          "artifact": "learning-practice-v01.md",
+          "hash": "7dc00abe12165ee6d4abf90272d543dee9744a6bf026fdb65ed8b145c9401162"
+        },
+        {
+          "stage": "diagnosis",
+          "artifact": "starting-level-diagnosis-v02.md",
+          "hash": "4663daeaac097325f770b74a920a37def101c73fdd45116ea9cb17c6687ead8e"
+        }
+      ]
+    },
+    {
+      "action": "inspect",
+      "stage": "draft",
+      "artifact": "learning-draft-v01.md",
+      "revision": "v01",
+      "attempt": 1
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "required-artifact-structure",
+      "result": "pass",
+      "finding": "Draft v01 has readable required sections, exact five passing input revisions, and six integrated milestones with exercise evidence, pass criteria, and recovery."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "goal-coverage",
+      "result": "pass",
+      "finding": "Draft begins at diagnosed boundary and invalid-case gap and addresses Windows, free English resources, 3h x 6w, and a locally runnable tested .NET service."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "credible-citations",
+      "result": "pass",
+      "finding": "Cited Microsoft Learn pages belong to checked resources v01 and sit beside SDK, xUnit, test-design, and CLI claims with 2026-09-30 checks dated."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "prerequisite-order",
+      "result": "pass",
+      "finding": "Case table and first test loop precede pricing, quote tests, fault trials, console integration, and final run; setup fluency is not assumed."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "schedule-feasibility",
+      "result": "pass",
+      "finding": "Each of six weekly component allocations sums to 3 hours, for 18 hours including reading, practice, setup, and local runs; assessment is outside schedule."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "exercise-alignment",
+      "result": "fail",
+      "finding": "Week 3 recovery copied from practice v01 asks about delivery after discount, but under the stated 100m discount and 50m delivery thresholds that fault is unobservable; practice-assessor must replace it with a detectable failure path and synthesis must regenerate."
+    },
+    {
+      "action": "start",
+      "stage": "practice",
+      "owner": "practice-assessor",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "2aa26907dddefa9afbbdef33188e7f83832c005b51933f10c5600785ff1f9add"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "13b5b65419d069e1377458f9264608e140cca6969efa91278cbfb4bd4d3fe4e1"
+        },
+        {
+          "stage": "sequence",
+          "artifact": "learning-sequence-v03.md",
+          "hash": "fc5d3fc91a260d7c0bffa51fb8d8568f2f78aaace0273c2868520253849c121a"
+        },
+        {
+          "stage": "diagnosis",
+          "artifact": "starting-level-diagnosis-v02.md",
+          "hash": "4663daeaac097325f770b74a920a37def101c73fdd45116ea9cb17c6687ead8e"
+        }
+      ]
+    },
+    {
+      "action": "start",
+      "stage": "practice",
+      "owner": "practice-assessor",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "2aa26907dddefa9afbbdef33188e7f83832c005b51933f10c5600785ff1f9add"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "13b5b65419d069e1377458f9264608e140cca6969efa91278cbfb4bd4d3fe4e1"
+        },
+        {
+          "stage": "sequence",
+          "artifact": "learning-sequence-v03.md",
+          "hash": "fc5d3fc91a260d7c0bffa51fb8d8568f2f78aaace0273c2868520253849c121a"
+        },
+        {
+          "stage": "diagnosis",
+          "artifact": "starting-level-diagnosis-v02.md",
+          "hash": "4663daeaac097325f770b74a920a37def101c73fdd45116ea9cb17c6687ead8e"
+        }
+      ],
+      "reason": "Draft validator found Week 3 delivery-after-discount recovery unobservable; replace it with detectable boundary and validation faults."
+    },
+    {
+      "action": "inspect",
+      "stage": "practice",
+      "artifact": "learning-practice-v03.md",
+      "revision": "v03",
+      "attempt": 2
+    },
+    {
+      "action": "gate",
+      "stage": "practice",
+      "gate": "exercise-alignment",
+      "result": "pass",
+      "finding": "Practice v03 preserves the six sequence v03 milestones and diagnosed boundary-case start, Windows and free English constraints, and the 3-hour weekly allocations; Week 3 recovery now addresses the observable 50m delivery boundary and public negative rejection."
+    },
+    {
+      "action": "gate",
+      "stage": "practice",
+      "gate": "observable-assessment",
+      "result": "pass",
+      "finding": "Each milestone specifies task, evidence, progress check, pass criterion, recovery and time. Detector tables state concrete input, correct/faulty outputs and distinguishing assertions; behavior-equivalent delivery-after-discount and partial removal of redundant validation are explicitly excluded from detection claims. Learner runs are prospective."
+    },
+    {
+      "action": "gate",
+      "stage": "practice",
+      "gate": "schedule-feasibility",
+      "result": "pass",
+      "finding": "Six weekly allocations sum to exactly 3 hours each and 18 hours overall. Detector explanations use existing cases and review time; no extra mutation trial or milestone is required."
+    },
+    {
+      "action": "start",
+      "stage": "draft",
+      "owner": "learning-plan-synthesizer",
+      "inputs": [
+        {
+          "stage": "brief",
+          "artifact": "requirements-brief-v02.md",
+          "hash": "2aa26907dddefa9afbbdef33188e7f83832c005b51933f10c5600785ff1f9add"
+        },
+        {
+          "stage": "resources",
+          "artifact": "learning-resources-v01.md",
+          "hash": "13b5b65419d069e1377458f9264608e140cca6969efa91278cbfb4bd4d3fe4e1"
+        },
+        {
+          "stage": "sequence",
+          "artifact": "learning-sequence-v03.md",
+          "hash": "fc5d3fc91a260d7c0bffa51fb8d8568f2f78aaace0273c2868520253849c121a"
+        },
+        {
+          "stage": "practice",
+          "artifact": "learning-practice-v03.md",
+          "hash": "fa435cfb4f5e9ce9a80821a43583c3b95742bc35b0706933284fbff2c041afa9"
+        },
+        {
+          "stage": "diagnosis",
+          "artifact": "starting-level-diagnosis-v02.md",
+          "hash": "4663daeaac097325f770b74a920a37def101c73fdd45116ea9cb17c6687ead8e"
+        }
+      ]
+    },
+    {
+      "action": "inspect",
+      "stage": "draft",
+      "artifact": "learning-draft-v02.md",
+      "revision": "v02",
+      "attempt": 2
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "required-artifact-structure",
+      "result": "pass",
+      "finding": "Independent validator PASS: inspected draft v02 has required sections, exact five current input paths, evidence and limitations; every milestone integrates corresponding practice v03."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "goal-coverage",
+      "result": "pass",
+      "finding": "Independent validator PASS: meaningful C# tests for a local .NET service, Windows and free English resources, 3 hours weekly for 6 weeks; diagnosed boundary and rejected-input gaps determine the start while SDK and setup fluency remain unmeasured."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "credible-citations",
+      "result": "pass",
+      "finding": "Independent validator PASS: setup, xUnit, design, CLI and coverage claims link to checked Microsoft sources in resources v01, dated 2026-09-30. Additional review opened four Microsoft pages; tutorial web endpoint returned 503, but official Microsoft source at https://github.com/dotnet/docs/blob/main/docs/core/testing/unit-testing-csharp-with-xunit.md verified projects, Fact and test loop. Prior access checks are distinguished from current reachability."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "prerequisite-order",
+      "result": "pass",
+      "finding": "Independent validator PASS: behavior table and first working test precede pricing coverage, quote extension, deliberate fault trials, console integration and reproducible handoff; Week 1 establishes SDK and project execution."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "schedule-feasibility",
+      "result": "pass",
+      "finding": "Independent validator PASS: six weekly component sums are exactly 3 hours each, totaling 18 hours. Detector explanations use existing allocations; only Week 4 requires two mutation trials."
+    },
+    {
+      "action": "gate",
+      "stage": "draft",
+      "gate": "exercise-alignment",
+      "result": "pass",
+      "finding": "Independent validator PASS: all six milestones preserve practice v03 task, evidence, checks, criterion, recovery and time. At 50m correct delivery/total 0m/50m differs from faulty 5m/55m; complete absence of public rejection differs from a throw at -1m. Literal assertions, equivalent delivery-after-discount reasoning and shared-validator caveat are correct; no learner completion claimed."
+    },
+    {
+      "action": "approve",
+      "revision": "v02",
+      "evidence": "I approve validated draft v02."
+    },
+    {
+      "action": "write",
+      "artifact": "learning-plan-final.md"
+    },
+    {
+      "action": "write",
+      "artifact": "learning-plan-final.md"
+    },
+    {
+      "action": "write",
+      "artifact": "learning-plan-final.md"
+    },
+    {
+      "action": "write",
+      "artifact": "learning-plan-final.md"
+    }
+  ]
+}

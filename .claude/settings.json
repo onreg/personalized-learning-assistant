@@ -1,0 +1,12 @@
+{
+  "hooks": {
+    "PreToolUse": [{
+      "matcher": "Write|Edit",
+      "hooks": [{"type": "command", "command": "node", "args": ["-e", "const f=require('node:fs'),p=require('node:path'),c=require('node:child_process');const raw=f.readFileSync(0,'utf8');let e;try{e=JSON.parse(raw)}catch{e={}}const final=e.hook_event_name==='PreToolUse'&&p.basename(e.tool_input?.file_path||'').toLowerCase()==='learning-plan-final.md';const deny=reason=>console.log(JSON.stringify({hookSpecificOutput:{hookEventName:'PreToolUse',permissionDecision:'deny',permissionDecisionReason:reason}}));let d=typeof e.cwd==='string'&&p.isAbsolute(e.cwd)?p.resolve(e.cwd):null,s;while(d){const x=p.join(d,'scripts','learning-workflow.mjs');if(f.existsSync(p.join(d,'.claude','settings.json'))&&f.existsSync(x)){s=x;break}const up=p.dirname(d);d=up===d?null:up}if(s){const r=c.spawnSync(process.execPath,[s,'hook'],{input:raw,encoding:'utf8'});if(r.status===0){process.stdout.write(r.stdout||'');process.stderr.write(r.stderr||'')}else if(final)deny('Workflow guard failed in active worktree');else{process.stderr.write(r.stderr||String(r.error||'Workflow hook failed'));process.exitCode=r.status||1}}else if(final)deny('Workflow hook missing from active worktree')"]}]
+    }],
+    "PostToolUse": [{
+      "matcher": "Write|Edit",
+      "hooks": [{"type": "command", "command": "node", "args": ["-e", "const f=require('node:fs'),p=require('node:path'),c=require('node:child_process');const raw=f.readFileSync(0,'utf8');let e;try{e=JSON.parse(raw)}catch{e={}}const final=e.hook_event_name==='PreToolUse'&&p.basename(e.tool_input?.file_path||'').toLowerCase()==='learning-plan-final.md';const deny=reason=>console.log(JSON.stringify({hookSpecificOutput:{hookEventName:'PreToolUse',permissionDecision:'deny',permissionDecisionReason:reason}}));let d=typeof e.cwd==='string'&&p.isAbsolute(e.cwd)?p.resolve(e.cwd):null,s;while(d){const x=p.join(d,'scripts','learning-workflow.mjs');if(f.existsSync(p.join(d,'.claude','settings.json'))&&f.existsSync(x)){s=x;break}const up=p.dirname(d);d=up===d?null:up}if(s){const r=c.spawnSync(process.execPath,[s,'hook'],{input:raw,encoding:'utf8'});if(r.status===0){process.stdout.write(r.stdout||'');process.stderr.write(r.stderr||'')}else if(final)deny('Workflow guard failed in active worktree');else{process.stderr.write(r.stderr||String(r.error||'Workflow hook failed'));process.exitCode=r.status||1}}else if(final)deny('Workflow hook missing from active worktree')"]}]
+    }]
+  }
+}

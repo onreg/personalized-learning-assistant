@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "learning_resources": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["scripts/learning-resources-mcp.mjs"]
+    }
+  }
+}
